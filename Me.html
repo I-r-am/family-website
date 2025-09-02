@@ -10,8 +10,8 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f8fafc; /* same as previous family pages */
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column; /* stack card + footer */
+      align-items: center;    /* center horizontally */
       min-height: 100vh;
     }
 
@@ -23,15 +23,16 @@
       overflow: hidden;
       padding: 35px;
       text-align: center;
+      flex: 1; /* take space so footer stays below */
     }
 
-    h1 {
+    .container h1 {
       font-size: 2rem;
       color: #333;
       margin-bottom: 20px;
     }
 
-    img {
+    .container img {
       display: block;
       margin: 0 auto 20px;
       width: 220px;
@@ -43,25 +44,25 @@
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    img:hover {
+    .container img:hover {
         transform: scale(1.05);  /* expands image */
         box-shadow: 0px 6px 20px rgba(0,0,0,0.2);  /* soft glow */
     }
 
-    ul {
+    .container ul {
       list-style-type: none;
       padding: 0;
       margin: 0;
     }
 
-    li {
+    .container ul li {
       font-size: 1.1rem;
       color: #555;
       padding: 8px 0;
       border-bottom: 1px solid #f0f0f0;
     }
 
-    li:last-child {
+    .container ul li:last-child {
       border-bottom: none;
     }
 
@@ -82,6 +83,13 @@
 
     .tribute strong {
       color: #222;
+    }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -106,5 +114,8 @@
       Her journey is guided by hope, patience, and the belief that the best is yet to come 🌙✨.</p>
     </div>
   </div>
+  <footer>
+    © Designed with ❤️ by Iram
+  </footer>
 </body>
 </html>

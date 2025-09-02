@@ -11,8 +11,8 @@
       margin: 0;
       padding: 40px;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column; /* stack card + footer */
+      align-items: center;    /* center horizontally */
       min-height: 100vh;
     }
 
@@ -24,6 +24,7 @@
       overflow: hidden;
       padding: 30px;
       text-align: center;
+      flex: 1; /* take space so footer stays below */
     }
 
     .card h1 {
@@ -79,6 +80,13 @@
     .tribute strong {
       color: #222;
     }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -88,7 +96,7 @@
     <ul>
       <li><strong>Full Name:</strong> Mahek Shabbir Mulla</li>
       <li><strong>Born:</strong> 19 February 2002, Belgaum</li>
-      <li><strong>Education:</strong> Paramedical Student</li>
+      <li><strong>Education:</strong> Paramedical</li>
     </ul>
 
     <div class="tribute">
@@ -98,5 +106,8 @@
       A few years back, she loved me so much, and I truly miss those days when she was my biggest supporter and friend💜.</p>
     </div>
   </div>
+  <footer>
+    @ Designed with ❤️ by Iram
+  </footer>
 </body>
 </html>

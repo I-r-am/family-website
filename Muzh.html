@@ -11,8 +11,8 @@
       margin: 0;
       padding: 40px;    
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column; /* stack card + footer */
+      align-items: center;    /* center horizontally */
       min-height: 100vh;
     }
 
@@ -24,6 +24,7 @@
       overflow: hidden;
       padding: 30px;
       text-align: center;
+      flex: 1; /* take space so footer stays below */
     }
 
     .card h1 {
@@ -79,6 +80,13 @@
     .tribute strong {
       color: #222;
     }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -102,9 +110,12 @@
       He has shown me what true love means – patience, care, and endless support.  
       To me, he is not only the <strong>love of my life</strong>, but also my best friend, my greatest blessing, and my forever companion.  
       With him, every dream feels possible, every challenge seems easier, and every moment becomes a memory to cherish.  
-      Sometimes I tell him <strong>“I hate you”</strong> just to tease, but deep inside, he knows it only means <em>“I love you even more.”</em> ❤️</p>
+      Sometimes I tell him <strong>“I hate you”</strong> just to tease, but deep inside, he knows it only means <strong>“I love you even more.”</strong> ❤️</p>
     </div>
   </div>
+  <footer>
+    © Designed with ❤️ by Iram
+  </footer>
 </body>
 </html>
 

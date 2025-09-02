@@ -11,6 +11,9 @@
       background: #f8fafc;
       text-align: center;
       padding: 40px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .container {
@@ -70,10 +73,18 @@
       transform: scale(1.05);
     }
 
-    footer {
+    .quote-footer {
       margin-top: 30px;
       color: #666;
       font-size: 0.95rem;
+    }
+
+    .main-footer {
+      margin-top: auto; /* push footer to bottom */
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      padding: 15px;
     }
   </style>
 </head>
@@ -93,9 +104,14 @@
       <a href="chotu.html">Atif</a>
       <a href="chotuu.html">Akif</a>
     </div>
-    <footer>
+    <footer class="quote-footer">
       <p>“The love of a family is life’s greatest blessing.” 💕</p>
     </footer>
   </div>
+
+  <!-- OUTSIDE the container -->
+  <footer class="main-footer">
+    © Designed with ❤️ by Iram
+  </footer>
 </body>
 </html>
